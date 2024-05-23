@@ -26,13 +26,7 @@ SELECT sleep(5);
 --  4.
 SELECT "Questao 1.2";
 SELECT "Questao 1.";
-SELECT C.codigo, COUNT(S.idStaff) AS NumFuncionarios FROM CodigoStaff C INNER JOIN Staff S ON C.codigo = S.Funcao GROUP BY S.Funcao;
-SELECT sleep(5);
-
---  5.
-SELECT "Questao 1.2";
-SELECT "Questao 2.";
-SELECT C.Funcao, COUNT(S.idStaff) AS NumFuncionarios FROM CodigoStaff C INNER JOIN Staff S ON C.codigo = S.Funcao GROUP BY S.Funcao;
+SELECT C.Funcao, COUNT(DISTINCT S.idStaff) AS NumFuncionarios FROM CodigoStaff C INNER JOIN Staff S ON C.codigo = S.Funcao GROUP BY S.Funcao, C.Funcao;
 SELECT sleep(5);
 
 --  6.
