@@ -14,7 +14,7 @@ select sleep(5);
 
 --  2.
 select "Questao 1.2";
-SELECT S.Nome, COUNT(V.idVendedor) AS Vendas FROM Staff S INNER JOIN Vendas V ON S.idStaff=V.idVendedor WHERE V.DataVenda LIKE '%24' GROUP BY S.Nome;
+SELECT S.Nome, COUNT(V.idVendedor) AS Vendas FROM Staff S INNER JOIN Vendas V ON S.idStaff=V.idVendedor WHERE V.DataVenda LIKE '%24' GROUP BY S.idStaff, V.idVendedor;
 select sleep(5);
 
 --  3. 
