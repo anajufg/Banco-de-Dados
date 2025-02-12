@@ -1,0 +1,132 @@
+/* Fonte de texto */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:wght@300..900&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    background: #e3f6e0; /* Verde claro suave para o fundo */
+    margin: 0 auto;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Todos os elementos vĆ£o ter */
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+}
+
+/* Estilo geral para as pĆ�ginas */
+.main {
+    display: flex; /* Deixa as divs lado a lado */
+    justify-content: center; /* Deixa tudo no centro no eixo x */
+    align-items: center; /* Deixa tudo no centro no eixo y */
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+h1 {
+    color: #6bbf77; /* Verde destacado para o tĆ­tulo */
+    font-weight: 800;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+.grupo-botao {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    margin: auto 10px;
+}
+
+.botao {
+    padding: 15px;
+    margin: 10px 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #6bbf77; /* Verde mais saturado para o botĆ£o */
+    color: white; /* Texto branco para contrastar com o verde */
+    cursor: pointer;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao:hover {
+    background: #56a15c; /* Verde mais escuro no hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Efeito de sombra mais intenso */
+}
+
+select {
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background: #4b8e52; /* Verde mais forte para contraste */
+    color: white; /* Texto branco */
+    font-size: 14pt;
+    font-weight: 500;
+    margin: 10px;
+    box-shadow: 0px 10px 40px rgba(19, 19, 37, 0.2); /* Sombra suave */
+}
+
+label {
+    color: #4b8e52; /* Cor mais forte para contraste */
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Estilo para a tabela */
+.table-container {
+    width: 100%;
+    max-height: 80vh; /* Altura mĆ�xima do contĆŖiner da tabela */
+    overflow-y: auto; /* Rolagem vertical */
+    overflow-x: auto; /* Rolagem horizontal */
+}
+
+/* Estilos gerais da tabela */
+table {
+    background: #f4f9f3; /* Verde muito suave para o fundo da tabela */
+    width: 100%;
+    border-collapse: collapse; /* Remove os espaĆ§os entre as cĆ©lulas */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    color: #4f7c4b; /* Verde mĆ©dio para o texto da tabela */
+    font-family: "Noto Sans", sans-serif; /* Fonte padrĆ£o */
+    font-size: 13pt; /* Tamanho da fonte adequado */
+}
+
+/* Estilos do cabeĆ§alho */
+table thead {
+    background: #6bbf77; /* Verde destacado para o cabeĆ§alho */
+    color: white; /* Texto branco no cabeĆ§alho para maior contraste */
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* Estilos das cĆ©lulas de cabeĆ§alho */
+thead th {
+    padding: 12px 15px; /* EspaĆ§amento interno */
+    text-align: left;
+}
+
+/* Estilos do corpo da tabela */
+tbody td {
+    padding: 12px 15px; /* EspaĆ§amento interno consistente */
+    text-align: left;
+    font-size: 12pt; /* Tamanho de texto adequado */
+}
+
+/* Estilo para as linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: #d3efdb; /* Verde bem suave para as linhas pares */
+}
+
+/* Ajuste de responsividade */
+@media only screen and (max-width: 950px) {
+    table {
+        font-size: 11pt; /* Reduz o tamanho da fonte para telas menores */
+    }
+}
